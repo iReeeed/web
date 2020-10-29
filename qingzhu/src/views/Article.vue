@@ -65,10 +65,12 @@
 				</dd>
 			</dl>
 			<ul class="nav">
-				<li><a href="index.html">首页</a></li>
-				<li><a href="allproducts.html">所有产品</a></li>
-				<li><a href="blog.html">博客</a></li>
-				<li><a href="article.html">文章列表</a></li>
+				<li class="link" @click="toIndex"><span >首页</span></li>
+				<li class="link" @click="toProducts"><span >所有产品</span></li>
+				<li class="link" @click="toBlog"><span >博客</span></li>
+				<li class="link" @click="toArticle"><span >文章列表</span></li>
+				<li class="link" @click="toPersonal"><span >个人中心</span></li>
+
 			</ul>
 			<a href="#" class="search"></a>
 			<div class="reg">
@@ -83,9 +85,9 @@
 					</span>
 				</div>
 				<div class = "reg_c">
-					<a href="land.html" id="">登陆</a>
+					<a span class="link" @click="toLogin" id="">登陆</a>
 					<span>&nbsp;|&nbsp;</span>
-					<a href="registe.html">注册</a>
+					<a span class="link" @click="toRegister">注册</a>
 				</div>
 			</div>
 		</div>
@@ -339,6 +341,43 @@
 
 <script>
 export default {
+    methods:{
+        toLogin(){
+            this.$router.push({
+                path:'/login'
+            });
+        },
+        toRegister(){
+            this.$router.push({
+                path:'/register'
+            });
+        },
+        toBlog(){
+            this.$router.push({
+                path:'/blog'
+            });
+        },
+         toProducts(){
+            this.$router.push({
+                path:'/allproducts'
+            });
+        },
+        toIndex(){
+            this.$router.push({
+                path:'/'
+            });
+        },
+        toArticle(){
+            this.$router.push({
+                path:'/article'
+            });
+        },
+        toPersonal(){
+            this.$router.push({
+                path:'/personal'
+            });
+        }
+    }
 
 }
 </script>
@@ -348,4 +387,7 @@ export default {
 @import '../assets/Home/css/common.css';
 @import '../assets/Home/css/article.css';
 
+.link:hover{
+    cursor: pointer;
+}
 </style>

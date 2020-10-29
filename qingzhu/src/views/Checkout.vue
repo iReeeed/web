@@ -2,24 +2,123 @@
   <div class="checkout">
     <el-container>
       <el-header>
-        <el-menu
-          :default-active="activeIndex"
-          class="el-menu-demo"
-          mode="horizontal"
-          @select="handleSelect"
-        >
-          <el-menu-item index="1">
-            <img src="@/assets/images/logo.png" alt />
-          </el-menu-item>
-          <el-menu-item index="2">首页</el-menu-item>
-          <el-menu-item index="3">所有产品</el-menu-item>
-          <el-menu-item index="4">关于我们</el-menu-item>
-          <el-menu-item index="5">联系我们</el-menu-item>
-        </el-menu>
+        <!-- header部分开始 -->
+        <div class="header">
+          <div class="header_c inner_c">
+            <h1 class="logo">青竹商城</h1>
+            <dl class="allType">
+              <dt>
+                <a href="#">查看所有类型</a>
+              </dt>
+              <dd>
+                <div class="dd_inn">
+                  <ul class="dd_cont">
+                    <li>
+                      <a href="#">不锈钢</a>
+                    </li>
+                    <li>
+                      <a href="#">原料水泥</a>
+                    </li>
+                    <li>
+                      <a href="#">塑料</a>
+                    </li>
+                    <li>
+                      <a href="#">木质</a>
+                    </li>
+                    <li>
+                      <a href="#">陶瓷</a>
+                    </li>
+                  </ul>
+                  <ul class="pro">
+                    <li>
+                      <a href="#">
+                        <div class="pic">
+                          <img src="@/assets/Home/images/img25.png" alt />
+                        </div>
+                        <div class="content">
+                          <h3>简约木质餐盘</h3>
+                          <span>￥200</span>
+                        </div>
+                      </a>
+                      <div class="mask">
+                        <a href="#" class="btn">查看详情</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pic">
+                          <img src="@/assets/Home/images/img26.png" alt />
+                        </div>
+                        <div class="content">
+                          <h3>简约木质餐盘</h3>
+                          <span>￥200</span>
+                        </div>
+                      </a>
+                      <div class="mask">
+                        <a href="#" class="btn">查看详情</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pic">
+                          <img src="@/assets/Home/images/img27.png" alt />
+                        </div>
+                        <div class="content">
+                          <h3>简约木质餐盘</h3>
+                          <span>￥200</span>
+                        </div>
+                      </a>
+                      <div class="mask">
+                        <a href="#" class="btn">查看详情</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+            <ul class="nav">
+              <li class="link" @click="toIndex">
+                <span>首页</span>
+              </li>
+              <li class="link" @click="toProducts">
+                <span>所有产品</span>
+              </li>
+              <li class="link" @click="toBlog">
+                <span>博客</span>
+              </li>
+              <li class="link" @click="toArticle">
+                <span>文章列表</span>
+              </li>
+              <li class="link" @click="toPersonal">
+                <span>个人中心</span>
+              </li>
+            </ul>
+            <a href="#" class="search"></a>
+            <div class="reg">
+              <div class="ico">
+                <span class="ico_c"></span>
+                <div class="settle">
+                  <p class="con">
+                    0件商品 共计：
+                    <span>￥0</span>
+                  </p>
+                  <a href="#" class="btn">结算</a>
+                </div>
+                <span class="con">0</span>
+              </div>
+              <div class="reg_c">
+                <span class="link" id @click="toLogin">登陆</span>
+                <span>&nbsp;|&nbsp;</span>
+                <span class="link" @click="toRegister">注册</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </el-header>
+
       <div class="check-addr">
         <p>选择收货地址</p>
-        <el-row :gutter="10">
+        <el-row :gutter="10" style="margin-top:15px">
           <el-col :span="6">
             <el-card class="box-card">
               <div slot="header" class="clearfix">
@@ -47,7 +146,7 @@
         </el-row>
         <el-button class="add-addr-btn" type="primary">+新增收货地址</el-button>
       </div>
-      <div class="check-goods-infor">
+      <div class="check-goods-infor" style="margin-top:15px">
         <p>确认商品信息</p>
         <hr />
         <el-table :data="goodsData" style="width: 100%">
@@ -254,11 +353,49 @@ export default {
     handleClose(key, keyPath) {
       console.log(key, keyPath);
     },
+    toLogin() {
+      this.$router.push({
+        path: "/login",
+      });
+    },
+    toRegister() {
+      this.$router.push({
+        path: "/register",
+      });
+    },
+    toBlog() {
+      this.$router.push({
+        path: "/blog",
+      });
+    },
+    toProducts() {
+      this.$router.push({
+        path: "/allproducts",
+      });
+    },
+    toIndex() {
+      this.$router.push({
+        path: "/",
+      });
+    },
+    toArticle() {
+      this.$router.push({
+        path: "/article",
+      });
+    },
+    toPersonal() {
+      this.$router.push({
+        path: "/personal",
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
+
+@import "../assets/Home/css/reset.css";
+@import "../assets/Home/css/index.css";
 .checkout {
   width: 80%;
   margin-left: 10%;
@@ -295,20 +432,6 @@ body > .el-container {
 }
 .something > .el-row > .el-col {
   text-align: left;
-}
-ul,
-li {
-  list-style: none;
-}
-li {
-  font-size: 13px;
-  margin-top: 8px;
-}
-ul > li:first-child {
-  font-size: 16px;
-}
-li:hover {
-  color: pink;
 }
 .text {
   font-size: 14px;
@@ -367,5 +490,11 @@ div > p {
 }
 .checkout-btn:hover{
     background:rgba(221, 4, 4, 0.445) ;
+}
+.check-addr{
+  margin-top: 30px;
+}
+.link{
+  cursor: pointer;
 }
 </style>

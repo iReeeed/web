@@ -1,8 +1,125 @@
 <template>
   <div class="personal">
+    <div class="content">
+     
     <el-container>
       <el-header>
-        <el-menu
+        <!-- header部分开始 -->
+        <div class="header">
+          <div class="header_c inner_c">
+            <h1 class="logo">青竹商城</h1>
+            <dl class="allType">
+              <dt>
+                <a href="#">查看所有类型</a>
+              </dt>
+              <dd>
+                <div class="dd_inn">
+                  <ul class="dd_cont">
+                    <li>
+                      <a href="#">不锈钢</a>
+                    </li>
+                    <li>
+                      <a href="#">原料水泥</a>
+                    </li>
+                    <li>
+                      <a href="#">塑料</a>
+                    </li>
+                    <li>
+                      <a href="#">木质</a>
+                    </li>
+                    <li>
+                      <a href="#">陶瓷</a>
+                    </li>
+                  </ul>
+                  <ul class="pro">
+                    <li>
+                      <a href="#">
+                        <div class="pic">
+                          <img src="@/assets/Home/images/img25.png" alt />
+                        </div>
+                        <div class="content">
+                          <h3>简约木质餐盘</h3>
+                          <span>￥200</span>
+                        </div>
+                      </a>
+                      <div class="mask">
+                        <a href="#" class="btn">查看详情</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pic">
+                          <img src="@/assets/Home/images/img26.png" alt />
+                        </div>
+                        <div class="content">
+                          <h3>简约木质餐盘</h3>
+                          <span>￥200</span>
+                        </div>
+                      </a>
+                      <div class="mask">
+                        <a href="#" class="btn">查看详情</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pic">
+                          <img src="@/assets/Home/images/img27.png" alt />
+                        </div>
+                        <div class="content">
+                          <h3>简约木质餐盘</h3>
+                          <span>￥200</span>
+                        </div>
+                      </a>
+                      <div class="mask">
+                        <a href="#" class="btn">查看详情</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+            <ul class="nav">
+              <li class="link" @click="toIndex">
+                <span>首页</span>
+              </li>
+              <li class="link" @click="toProducts">
+                <span>所有产品</span>
+              </li>
+              <li class="link" @click="toBlog">
+                <span>博客</span>
+              </li>
+              <li class="link" @click="toArticle">
+                <span>文章列表</span>
+              </li>
+              <li class="link" @click="toPersonal">
+                <span>个人中心</span>
+              </li>
+            </ul>
+            <a href="#" class="search"></a>
+            <div class="reg">
+              <div class="ico">
+                <span class="ico_c"></span>
+                <div class="settle">
+                  <p class="con">
+                    0件商品 共计：
+                    <span>￥0</span>
+                  </p>
+                  <a href="#" class="btn">结算</a>
+                </div>
+                <span class="con">0</span>
+              </div>
+              <div class="reg_c">
+                <span class="link" id @click="toLogin">登陆</span>
+                <span>&nbsp;|&nbsp;</span>
+                <span class="link" @click="toRegister">注册</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </el-header>
+
+      <!-- header部分结束 -->
+      <!--  <el-menu
           :default-active="activeIndex"
           class="el-menu-demo"
           mode="horizontal"
@@ -15,9 +132,8 @@
           <el-menu-item index="3">所有产品</el-menu-item>
           <el-menu-item index="4">关于我们</el-menu-item>
           <el-menu-item index="5">联系我们</el-menu-item>
-        </el-menu>
-      </el-header>
-      <el-container>
+      </el-menu>-->
+      <el-container style="margin-top:15px">
         <el-aside width="200px">
           <h5>个人中心</h5>
           <el-menu
@@ -108,19 +224,28 @@
           </el-row>
         </el-main>
       </el-container>
-      <el-footer>
-        <el-row :gutter="10">
+      <div style="height:100px;width:100%"></div>
+      
+    </el-container>
+    </div>
+    <el-footer>
+        <div class="foot-content">
+          <el-row :gutter="10">
           <el-col :span="6">
-            <div>正</div><span>正品承诺</span>
+            <div>正</div>
+            <span>正品承诺</span>
           </el-col>
           <el-col :span="6">
-            <div>低</div><span>低价保障</span>
+            <div>低</div>
+            <span>低价保障</span>
           </el-col>
           <el-col :span="6">
-            <div>退</div><span>30天无忧退货</span>
+            <div>退</div>
+            <span>30天无忧退货</span>
           </el-col>
           <el-col :span="6">
-            <div>邮</div><span>满88包邮</span>
+            <div>邮</div>
+            <span>满88包邮</span>
           </el-col>
         </el-row>
         <hr style="margin-top:30px" />
@@ -128,13 +253,13 @@
           <el-row :gutter="10">
             <el-col :span="6">
               <img src="@/assets/images/logo.png" alt />
-              <br>
+              <br />
               <span style="font-size:8px;margin-top:5px">
-            青竹良品原创生活类电商品牌，
-            秉承一贯的严谨态度，我们深入世界各地，
-            从源头全程严格把控商品生产环节，力求帮消费者甄选到最优质的商品，
-            全线采用天然原材料，控制甲醛低量无害，采用进口工艺，
-            国际生产线不断优化，食材保证核心原产地新鲜直供，让你享受品质生活
+                青竹良品原创生活类电商品牌，
+                秉承一贯的严谨态度，我们深入世界各地，
+                从源头全程严格把控商品生产环节，力求帮消费者甄选到最优质的商品，
+                全线采用天然原材料，控制甲醛低量无害，采用进口工艺，
+                国际生产线不断优化，食材保证核心原产地新鲜直供，让你享受品质生活
               </span>
             </el-col>
             <el-col :span="4">
@@ -165,13 +290,12 @@
               </ul>
             </el-col>
             <el-col :span="4">
-              <img src="@/assets/images/微信二维码.png" alt="">
+              <img src="@/assets/images/微信二维码.png" alt />
             </el-col>
           </el-row>
-      </div>
+        </div>
+        </div>
       </el-footer>
-    </el-container>
-    <div style="height:100px;width:100%"></div>
   </div>
 </template>
 
@@ -193,11 +317,49 @@ export default {
     handleClose(key, keyPath) {
       console.log(key, keyPath);
     },
+    toLogin() {
+      this.$router.push({
+        path: "/login",
+      });
+    },
+    toRegister() {
+      this.$router.push({
+        path: "/register",
+      });
+    },
+    toBlog() {
+      this.$router.push({
+        path: "/blog",
+      });
+    },
+    toProducts() {
+      this.$router.push({
+        path: "/allproducts",
+      });
+    },
+    toIndex() {
+      this.$router.push({
+        path: "/",
+      });
+    },
+    toArticle() {
+      this.$router.push({
+        path: "/article",
+      });
+    },
+    toPersonal() {
+      this.$router.push({
+        path: "/personal",
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
+@import "../assets/Home/css/reset.css";
+@import "../assets/Home/css/index.css";
+
 .allorder > .el-col > img {
   height: 70px;
   padding: 15px 0 0 15px;
@@ -207,19 +369,33 @@ export default {
   margin: 0 10px;
 }
 .personal {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  background: #F2F2F2;
+}
+.content{
+  width: 76%;
+  margin-left: 12%;
+  background: white;
+  padding: 10px;
 }
 .el-header {
   padding: 0;
 }
 .el-footer {
   color: #333;
-  background: #FAF8F8;
+  background: #faf8f8;
   text-align: center;
   height: 400px !important;
   margin-top: 50px;
   padding-top: 50px;
+}
+.foot-content{
+  width: 80%;
+  margin-left: 10%;
+
+}
+.link{
+  cursor: pointer;
 }
 
 .el-aside {
@@ -234,36 +410,23 @@ export default {
 body > .el-container {
   margin-bottom: 40px;
 }
-.el-footer>.el-row>.el-col>div{
+.el-footer>.foot-content > .el-row > .el-col > div {
   height: 60px;
-  width:60px;
+  width: 60px;
   float: left;
   border: 2px solid black;
   border-radius: 50%;
   font-size: 24px;
-  line-height:60px
+  line-height: 60px;
 }
-.el-footer>.el-row>.el-col>span{
-  margin-left:-100px;
+.el-footer > .el-row > .el-col > span {
+  margin-left: -100px;
 }
-.something{
+.something {
   margin-top: 30px;
 }
-.something>.el-row>.el-col{
+.something > .el-row > .el-col {
   text-align: left;
 }
-ul,li{
-  list-style: none;
-}
-li{
-  font-size:13px;
-  margin-top:8px;
-}
-ul>li:first-child{
-  font-size:16px;
 
-}
-li:hover{
-  color: pink;
-}
 </style>
