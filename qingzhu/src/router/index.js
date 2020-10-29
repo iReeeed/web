@@ -20,6 +20,36 @@ const routes = [{
         name: 'Personal',
         component: () =>
             import ( /* webpackChunkName: "about" */ '../views/Personal.vue')
+    },
+    {
+        path: '/allproducts',
+        name: 'AllProducts',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/AllProducts.vue')
+    },
+    {
+        path: '/blog',
+        name: 'Blog',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/Blog.vue')
+    },
+    {
+        path: '/article',
+        name: 'Article',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/Article.vue')
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/Land.vue')
+    },
+    {
+        path: '/register',
+        name: 'Register',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/Register.vue')
     }
 
 ]
