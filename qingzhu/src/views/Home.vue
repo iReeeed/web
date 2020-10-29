@@ -2,7 +2,7 @@
   <div>
 <div class="outer">
         <div class="inter">
-            <a href="" class="logo"><img src="images/logo.png" alt=""></a>
+            <a href="" class="logo"><img src="@/assets/Home/images/logo.png" alt=""></a>
             <ul>
                 <li><a href="">查看所有类别</a></li>
                 <li><a href="">首页</a></li>
@@ -26,13 +26,13 @@
     <div class="outer0">
         <ul class="imgList">
             <li style="z-index:1;">
-                <a href=""><img src="images/start.png" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/start.png" alt=""></a>
             </li>
             <li>
-                <a href=""><img src="images/start1.png" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/start1.png" alt=""></a>
             </li>
             <li>
-                <a href=""><img src="images/start2.png" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/start2.png" alt=""></a>
             </li>
         </ul>
         <div class="focusList">
@@ -50,49 +50,49 @@
             <div class="bbb">
                 <ul>
                     <li>
-                        <a href=""><img src="images/png11.png" alt="" title="便携简约清扫扫帚"></a>
+                        <a href=""><img src="@/assets/Home/images/png11.png" alt="" title="便携简约清扫扫帚"></a>
                         <a href="">
                             <p>便携简约清扫扫帚</p>
                         </a>
                         <a href=""><span>¥580.00</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/png12.png" alt="" title="简约多拼接彩色木制积木"></a>
+                        <a href=""><img src="@/assets/Home/images/png12.png" alt="" title="简约多拼接彩色木制积木"></a>
                         <a href="">
                             <p>简约多拼接彩色木制积木</p>
                         </a>
                         <a href=""><span>¥300.00</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/png3.png" alt="" title="黑桃自然花香蜡烛"></a>
+                        <a href=""><img src="@/assets/Home/images/png3.png" alt="" title="黑桃自然花香蜡烛"></a>
                         <a href="">
                             <p>黑桃自然花香蜡烛</p>
                         </a>
                         <a href=""><span>¥580.00</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/png2.png" alt="" title="简约时尚水泥花瓶"></a>
+                        <a href=""><img src="@/assets/Home/images/png2.png" alt="" title="简约时尚水泥花瓶"></a>
                         <a href="">
                             <p>简约时尚水泥花瓶</p>
                         </a>
                         <a href=""><span>¥450.00</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/png13.png" alt="" title="简约木制餐盘"></a>
+                        <a href=""><img src="@/assets/Home/images/png13.png" alt="" title="简约木制餐盘"></a>
                         <a href="">
                             <p>简约木制餐盘</p>
                         </a>
                         <a href=""><span>¥300.00</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/png14.png" alt="" title="不锈钢咖啡水壶"></a>
+                        <a href=""><img src="@/assets/Home/images/png14.png" alt="" title="不锈钢咖啡水壶"></a>
                         <a href="">
                             <p>不锈钢咖啡水壶</p>
                         </a>
                         <a href=""><span>¥400.00</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/png15.png" alt="" title="经典系列计算机"></a>
+                        <a href=""><img src="@/assets/Home/images/png15.png" alt="" title="经典系列计算机"></a>
                         <a href="">
                             <p>经典系列计算机</p>
                         </a>
@@ -109,15 +109,15 @@
         </div>
         <div class="inter3">
             <div class="left">
-                <a href=""><img src="images/pic1.jpg" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/pic1.jpg" alt=""></a>
                 <span class="border1"></span>
             </div>
             <div class="right1">
-                <a href=""><img src="images/pic2.jpg" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/pic2.jpg" alt=""></a>
                 <span class="border2"></span>
             </div>
             <div class="right2">
-                <a href=""><img src="images/pic3.jpg" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/pic3.jpg" alt=""></a>
                 <span class="border3"></span>
             </div>
         </div>
@@ -130,16 +130,16 @@
         <div class="box2">
             <ul>
                 <div class="start">
-                    <a href=""><img src="images/png1.png" alt=""></a>
+                    <a href=""><img src="@/assets/Home/images/png1.png" alt=""></a>
                     <a href="" class="a1"></a>
                 </div>
                 <div class="start1">
-                    <a href=""><img src="images/png6.png" alt=""></a>
+                    <a href=""><img src="@/assets/Home/images/png6.png" alt=""></a>
                     <a href="" class="a2"></a>
                 </div>
                 <div class="end">
                     <li class="l1">
-                        <a href="查看详情.html"><img src="images/png2.png" alt=""></a>
+                        <a href="查看详情.html"><img src="@/assets/Home/images/png2.png" alt=""></a>
                         <a href="">
                             <p class="p11">简约时尚水泥花瓶</p>
                         </a>
@@ -149,7 +149,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="查看详情.html"><img src="images/png3.png" alt=""></a>
+                        <a href="查看详情.html"><img src="@/assets/Home/images/png3.png" alt=""></a>
                         <a href="">
                             <p class="p11">黑陶器具</p>
                         </a>
@@ -159,7 +159,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="查看详情.html"><img src="images/png4.png" alt=""></a>
+                        <a href="查看详情.html"><img src="@/assets/Home/images/png4.png" alt=""></a>
                         <p class="p11"><a href="">经典系列时钟</a></p>
                         <p class="p22">¥580.00</p>
                         <a href="" class="a11">
@@ -167,7 +167,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="查看详情.html"><img src="images/png5.png" alt=""></a>
+                        <a href="查看详情.html"><img src="@/assets/Home/images/png5.png" alt=""></a>
                         <p class="p11"><a href="">不锈钢夹子</a></p>
                         <p class="p22">¥120.00</p>
                         <a href="" class="a11">
@@ -175,7 +175,7 @@
                         </a>
                     </li>
                     <li class="l1">
-                        <a href="查看详情.html"><img src="images/png7.png" alt=""></a>
+                        <a href="查看详情.html"><img src="@/assets/Home/images/png7.png" alt=""></a>
                         <p class="p11"><a href="">黑桃自然花香蜡烛</a></p>
                         <p class="p22">¥580.00</p>
                         <a href="" class="a11">
@@ -183,7 +183,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="查看详情.html"><img src="images/png8.png" alt=""></a>
+                        <a href="查看详情.html"><img src="@/assets/Home/images/png8.png" alt=""></a>
                         <p class="p11"><a href="">简单大容量瓷碗</a></p>
                         <p class="p22">¥150.00</p>
                         <a href="" class="a11">
@@ -191,7 +191,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="查看详情.html"><img src="images/png9.png" alt=""></a>
+                        <a href="查看详情.html"><img src="@/assets/Home/images/png9.png" alt=""></a>
                         <p class="p11"><a href="">不锈钢汤勺</a></p>
                         <p class="p22">¥120.00</p>
                         <a href="" class="a11">
@@ -199,7 +199,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="查看详情.html"><img src="images/png10.png" alt=""></a>
+                        <a href="查看详情.html"><img src="@/assets/Home/images/png10.png" alt=""></a>
                         <p class="p11"><a href="">不锈钢大号汤勺</a></p>
                         <p class="p22">¥120.00</p>
                         <a href="" class="a11">
@@ -218,52 +218,52 @@
         </div>
         <div class="inter2">
             <div class="left">
-                <a href=""><img src="images/pic4.jpg" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/pic4.jpg" alt=""></a>
                 <span class="border1"></span>
             </div>
             <div class="mid">
                 <div class="mid1">
-                    <a href=""><img src="images/pic5.jpg" alt=""></a>
+                    <a href=""><img src="@/assets/Home/images/pic5.jpg" alt=""></a>
                     <span class="border2"></span>
                 </div>
                 <div class="mid2">
-                    <a href=""><img src="images/pic6.jpg" alt=""></a>
+                    <a href=""><img src="@/assets/Home/images/pic6.jpg" alt=""></a>
                     <span class="border3"></span>
                 </div>
             </div>
             <div class="right">
-                <a href=""><img src="images/pic7.jpg" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/pic7.jpg" alt=""></a>
                 <span class="border4"></span>
             </div>
         </div>
         <div class="inter3">
             <ul>
                 <li>
-                    <a href="" class="a1"><img src="images/pic8.png" alt=""></a>
+                    <a href="" class="a1"><img src="@/assets/Home/images/pic8.png" alt=""></a>
                     <a href="">
                         <p>自然生活，精选用料</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="a1"><img src="images/pic9.png" alt=""></a>
+                    <a href="" class="a1"><img src="@/assets/Home/images/pic9.png" alt=""></a>
                     <a href="">
                         <p>源点生活</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="a1"><img src="images/pic10.png" alt=""></a>
+                    <a href="" class="a1"><img src="@/assets/Home/images/pic10.png" alt=""></a>
                     <a href="">
                         <p>puree好设计好生活</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="a1"><img src="images/pic11.png" alt=""></a>
+                    <a href="" class="a1"><img src="@/assets/Home/images/pic11.png" alt=""></a>
                     <a href="">
                         <p>家居精品之选</p>
                     </a>
                 </li>
                 <li class="last">
-                    <a href="" class="a1"><img src="images/pic12.png" alt=""></a>
+                    <a href="" class="a1"><img src="@/assets/Home/images/pic12.png" alt=""></a>
                     <a href="">
                         <p>木香，手工制作</p>
                     </a>
@@ -280,7 +280,7 @@
             <ul>
                 <li>
                     <div class="top1">
-                        <a href=""><img src="images/end1.png" alt=""></a>
+                        <a href=""><img src="@/assets/Home/images/end1.png" alt=""></a>
                     </div>
                     <div class="bottom">
                         <div class="bottom1">
@@ -295,7 +295,7 @@
                 </li>
                 <li>
                     <div class="top2">
-                        <a href=""><img src="images/end2.png" alt=""></a>
+                        <a href=""><img src="@/assets/Home/images/end2.png" alt=""></a>
 
                     </div>
                     <div class="bottom">
@@ -311,7 +311,7 @@
                 </li>
                 <li>
                     <div class="top3">
-                        <a href=""><img src="images/end3.png" alt=""></a>
+                        <a href=""><img src="@/assets/Home/images/end3.png" alt=""></a>
                     </div>
                     <div class="bottom">
                         <div class="bottom1">
@@ -326,7 +326,7 @@
                 </li>
                 <li>
                     <div class="top4">
-                        <a href=""><img src="images/end4.png" alt=""></a>
+                        <a href=""><img src="@/assets/Home/images/end4.png" alt=""></a>
                     </div>
                     <div class="bottom">
                         <div class="bottom1">
@@ -347,7 +347,7 @@
     <div class="outer5">
         <div class="inter1">
             <div class="left">
-                <a href=""><img src="images/logo.png" alt=""></a>
+                <a href=""><img src="@/assets/Home/images/logo.png" alt=""></a>
                 <p>青竹良品原创生活类电商品牌，秉承一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到最优质的商品，全线采用天然原材料，控制甲醛低量无害，采用进口工艺，国际生产线不断优化，食材保证核心原产地新鲜直供，让你享受品质生活</p>
             </div>
             <div class="center">
@@ -374,30 +374,42 @@
                 </dl>
             </div>
             <div class="right">
-                <img src="images/weixin.png" alt="">
-                <img src="images/weibo.png" alt="">
+                <img src="@/assets/Home/images/weixin.png" alt="">
+                <img src="@/assets/Home/images/weibo.png" alt="">
                 <span>微信公众号</span>
                 <span>微博公众号</span>
             </div>
         </div>
         <hr>
         <div class="inter2">
-            a
         </div>
     </div>
     <div class="box3">
-        <a href=""><span><img src="images/手机图标.png" alt="">预览手机端</span></a>
+        <a href=""><span><img src="@/assets/Home/images/手机图标.png" alt="">预览手机端</span></a>
     </div>
 
   </div>
 </template>
 
+ <script src="@/assets/Home/js/青竹1.js"></script>
+    <script src="@/assets/Home/js/jqurey.js"></script>
+    <script src="@/assets/Home/js/图片.js"></script>
+    <script src="@/assets/Home/js/shop.js"></script>
 <script>
 export default {
 
 }
 </script>
 
-<style>
+<style scoped>
+@import '../assets/Home/css/青竹0.css';
+@import '../assets/Home/css/图片.css';
+@import '../assets/Home/css/青竹1.css';
+@import '../assets/Home/iconfont/iconfont.css';
+@import '../assets/Home/css/青竹2.css';
+@import '../assets/Home/css/青竹3.css';
+@import '../assets/Home/css/青竹4.css';
+@import '../assets/Home/css/青竹5.css';
+@import '../assets/Home/css/青竹6.css';
 
 </style>
