@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="cart">
     <!-- header部分开始 -->
     <div class="header">
       <div class="header_c inner_c">
@@ -95,7 +95,6 @@
         <div class="reg">
           <div class="ico">
             <span class="ico_c link" @click="toCart"></span>
-
             <div class="settle">
               <p class="con">
                 0件商品 共计：
@@ -106,201 +105,96 @@
             <span class="con">0</span>
           </div>
           <div class="reg_c">
-            <span class="link" @click="toLogin" id>登陆</span>
+            <span class="link" id @click="toLogin">登陆</span>
             <span>&nbsp;|&nbsp;</span>
             <span class="link" @click="toRegister">注册</span>
           </div>
         </div>
       </div>
     </div>
-    <!-- header部分结束 -->
-    <div class="s_content">
-      <div class="s_content_c inner_c">
-        <div class="s_info">
-          <div class="s_title">
-            <a href="#">首页</a>
-            &gt;
-            <span>所有商品</span>
-          </div>
-          <div class="screen">
-            <table>
-              <tr class="t1">
-                <th>品牌</th>
-                <td>
-                  <a href="#">无印</a>
-                  <a href="#">博朗</a>
-                  <a href="#">花印</a>
-                </td>
-              </tr>
-              <tr class="t2">
-                <th>类别</th>
-                <td>
-                  <a href="#">不锈钢</a>
-                  <a href="#">原料水泥</a>
-                  <a href="#">塑料</a>
-                  <a href="#">木质</a>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="fun">
-            <div class="sort">
-              <span>排序：</span>
-              <a href="#" class="s1">
-                <i></i>销量
-              </a>
-              <a href="#" class="s2">
-                <i></i>价格
-              </a>
-              <a href="#" class="s3">
-                <i></i>上架时间
-              </a>
-            </div>
-            <div class="swi">
-              <span>仅显示有货：</span>
-              <a href="#">
-                <i></i>
-              </a>
-            </div>
-            <div class="total">
-              共
-              <span>20</span>个商品
-            </div>
-          </div>
-          <div class="s_prod">
-            <ul class="pub_pro">
-              <li>
-                <img src="@/assets/Home/images/img47.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img41.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img42.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img43.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img44.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img46.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img48.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img49.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img49.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img47.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img47.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-              <li>
-                <img src="@/assets/Home/images/img47.png" alt />
-                <div class="cont">
-                  <h3>不锈钢汤勺</h3>
-                  <span>￥300</span>
-                </div>
-                <div class="mask">
-                  <a href="#" class="btn">查看详情</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="pages">
-            <a href="#">&lt;</a>
-            <a href="#" class="tol cur">1</a>
-            <a href="#" class="tol">2</a>
-            <a href="#">&gt;</a>
-          </div>
+    <div class="cart-content">
+      <div class="main">
+        <p class="cart-title">购物车</p>
+        <el-table
+          ref="multipleTable"
+          :data="tableData"
+          tooltip-effect="dark"
+          style="width: 100%"
+          @selection-change="handleSelectionChange"
+        >
+          <el-table-column type="selection" width="55"></el-table-column>
+          <el-table-column label="商品名称" prop="good" min-width="420">
+            <template slot-scope="scope">
+              <img style="float:left" :src="goodsList[scope.$index].url" alt width="80" />
+              <p
+                style="float:left;margin-left:10px;margin-top:30px"
+              >{{goodsList[scope.$index].name}}</p>
+            </template>
+          </el-table-column>
+          <el-table-column prop="price" label="单价">
+            <template slot-scope="scope">
+              <span>￥{{goodsList[scope.$index].price}}</span>
+            </template>
+          </el-table-column>
+          <el-table-column prop="count" label="数量">
+            <template slot-scope="scope">
+              <input
+                type="button"
+                value="-"
+                style="margin-right:5px"
+                @click="subCount(scope.$index)"
+              />
+              {{goodsList[scope.$index].count}}
+              <input
+                type="button"
+                style="margin-left:5px"
+                value="+"
+                @click="addCount(scope.$index)"
+              />
+            </template>
+          </el-table-column>
+          <el-table-column prop="total" label="小计">
+            <template slot-scope="scope">
+              <span>￥{{goodsList[scope.$index].price*goodsList[scope.$index].count}}</span>
+            </template>
+          </el-table-column>
+          <el-table-column prop="operation" label="操作">
+            <template slot-scope="scope">
+              <span @click="del(scope.$index)" class="del">删除</span>
+            </template>
+          </el-table-column>
+        </el-table>
+        <div
+          class="toPay"
+          style="margin-top:100px;border:1px solid white;background:white;padding:30px"
+        >
+          <el-row :gutter="10">
+            <el-col :span="3" class="link">
+              <span @click="delAll">批量删除</span>
+            </el-col>
+            <el-col :span="3">清理下架商品</el-col>
+            <el-col :span="7" :offset="6">
+              <span>已选</span>
+              <span style="color:red;font-size:20px;padding:5px">{{selected}}</span>
+              <span>件</span>
+              <span style="margin-left:15px">合计:(不含运费)</span>
+              <span style="color:red;font-size:20px;padding:5px">￥{{allTotal}}</span>
+              <span>元</span>
+              <br />
+              <span style="font-size:13px">已优惠：￥0</span>
+            </el-col>
+            <el-col :span="4">
+              <el-button
+                type="primary"
+                style="width:100%;background:red;border:red"
+                @click="toCheckout"
+              >确认结算</el-button>
+            </el-col>
+          </el-row>
         </div>
+        <div style="height:100px;width:100%"></div>
       </div>
     </div>
-    <!-- footer部分开始 -->
     <div class="footer">
       <div class="footer_c inner_c">
         <div class="footer_top">
@@ -413,24 +307,91 @@
         </div>
       </div>
     </div>
-    <!-- 返回顶部 -->
-    <div class="lingpin_top">
-      <a href="#" class="qq">
-        QQ
-        <br />客服
-      </a>
-      <a href="#" class="wx">
-        微信
-        <br />客服
-      </a>
-      <a href="#" class="top_c">↑</a>
-    </div>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      tableData: [{ index: 0 }, { index: 1 }, { index: 2 }],
+      multipleSelection: [],
+      goodsList: [
+        {
+          url: require("@/assets/Home/images/s1.png"),
+          name: "经典系列红色时钟",
+          count: 1,
+          price: 580,
+          selected: false,
+        },
+        {
+          url: require("@/assets/Home/images/s2.png"),
+          name: "便捷简约清扫扫帚",
+          count: 1,
+          price: 580,
+          selected: false,
+        },
+        {
+          url: require("@/assets/Home/images/s3.png"),
+          name: "黑色陶瓷研磨器皿",
+          count: 1,
+          price: 150,
+          selected: false,
+        },
+      ],
+      selected: 0,
+      allTotal: 0,
+    };
+  },
+  computed: {},
+  watch: {
+    multipleSelection(val) {
+        this.allTotal = 0;
+      this.multipleSelection.forEach(item => {
+          this.allTotal += this.goodsList[item.index].count * this.goodsList[item.index].price;
+      })
+    },
+  },
   methods: {
+    delAll() {
+      if (this.multipleSelection.length > 0) {
+        this.multipleSelection.forEach((item) => {
+          this.goodsList.splice(item.index, 1);
+          this.tableData.pop();
+        });
+      }
+    },
+    del(index) {
+      this.goodsList.splice(index, 1);
+      this.tableData.pop();
+    },
+    addCount(index) {
+      this.goodsList[index].count += 1;
+      this.allTotal = 0;
+      this.multipleSelection.forEach(item => {
+          this.allTotal += this.goodsList[item.index].count * this.goodsList[item.index].price;
+      })
+    },
+    subCount(index) {
+      this.goodsList[index].count -= 1;
+      this.allTotal = 0;
+      this.multipleSelection.forEach(item => {
+          this.allTotal += this.goodsList[item.index].count * this.goodsList[item.index].price;
+      })
+    },
+    toggleSelection(rows) {
+      if (rows) {
+        rows.forEach((row) => {
+          this.$refs.multipleTable.toggleRowSelection(row);
+        });
+      } else {
+        this.$refs.multipleTable.clearSelection();
+      }
+    },
+    handleSelectionChange(val) {
+      this.multipleSelection = val;
+      this.selected = this.multipleSelection.length;
+    },
     toLogin() {
       this.$router.push({
         path: "/login",
@@ -471,16 +432,42 @@ export default {
         path: "/cart",
       });
     },
+    toCheckout() {
+      this.$router.push({
+        path: "/checkout",
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
 @import "../assets/Home/css/reset.css";
-@import "../assets/Home/css/common.css";
-@import "../assets/Home/css/allproducts.css";
+@import "../assets/Home/css/index.css";
 
-.link:hover {
+td > .cell {
+  text-align: center;
+  line-height: 80px;
+}
+.del:hover {
   cursor: pointer;
+}
+.link {
+  cursor: pointer;
+}
+.cart-content {
+  background: #f2f2f2;
+}
+.main {
+  padding-top: 100px;
+  width: 74%;
+  margin-left: 13%;
+}
+.cart-title {
+  font-size: 32px;
+  font-weight: 400;
+}
+.el-table {
+  margin-top: 30px;
 }
 </style>

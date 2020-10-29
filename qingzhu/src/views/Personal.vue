@@ -1,125 +1,125 @@
 <template>
   <div class="personal">
     <div class="content">
-     
-    <el-container>
-      <el-header>
-        <!-- header部分开始 -->
-        <div class="header">
-          <div class="header_c inner_c">
-            <h1 class="logo">青竹商城</h1>
-            <dl class="allType">
-              <dt>
-                <a href="#">查看所有类型</a>
-              </dt>
-              <dd>
-                <div class="dd_inn">
-                  <ul class="dd_cont">
-                    <li>
-                      <a href="#">不锈钢</a>
-                    </li>
-                    <li>
-                      <a href="#">原料水泥</a>
-                    </li>
-                    <li>
-                      <a href="#">塑料</a>
-                    </li>
-                    <li>
-                      <a href="#">木质</a>
-                    </li>
-                    <li>
-                      <a href="#">陶瓷</a>
-                    </li>
-                  </ul>
-                  <ul class="pro">
-                    <li>
-                      <a href="#">
-                        <div class="pic">
-                          <img src="@/assets/Home/images/img25.png" alt />
+      <el-container>
+        <el-header>
+          <!-- header部分开始 -->
+          <div class="header">
+            <div class="header_c inner_c">
+              <h1 class="logo">青竹商城</h1>
+              <dl class="allType">
+                <dt>
+                  <a href="#">查看所有类型</a>
+                </dt>
+                <dd>
+                  <div class="dd_inn">
+                    <ul class="dd_cont">
+                      <li>
+                        <a href="#">不锈钢</a>
+                      </li>
+                      <li>
+                        <a href="#">原料水泥</a>
+                      </li>
+                      <li>
+                        <a href="#">塑料</a>
+                      </li>
+                      <li>
+                        <a href="#">木质</a>
+                      </li>
+                      <li>
+                        <a href="#">陶瓷</a>
+                      </li>
+                    </ul>
+                    <ul class="pro">
+                      <li>
+                        <a href="#">
+                          <div class="pic">
+                            <img src="@/assets/Home/images/img25.png" alt />
+                          </div>
+                          <div class="content">
+                            <h3>简约木质餐盘</h3>
+                            <span>￥200</span>
+                          </div>
+                        </a>
+                        <div class="mask">
+                          <a href="#" class="btn">查看详情</a>
                         </div>
-                        <div class="content">
-                          <h3>简约木质餐盘</h3>
-                          <span>￥200</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pic">
+                            <img src="@/assets/Home/images/img26.png" alt />
+                          </div>
+                          <div class="content">
+                            <h3>简约木质餐盘</h3>
+                            <span>￥200</span>
+                          </div>
+                        </a>
+                        <div class="mask">
+                          <a href="#" class="btn">查看详情</a>
                         </div>
-                      </a>
-                      <div class="mask">
-                        <a href="#" class="btn">查看详情</a>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="pic">
-                          <img src="@/assets/Home/images/img26.png" alt />
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pic">
+                            <img src="@/assets/Home/images/img27.png" alt />
+                          </div>
+                          <div class="content">
+                            <h3>简约木质餐盘</h3>
+                            <span>￥200</span>
+                          </div>
+                        </a>
+                        <div class="mask">
+                          <a href="#" class="btn">查看详情</a>
                         </div>
-                        <div class="content">
-                          <h3>简约木质餐盘</h3>
-                          <span>￥200</span>
-                        </div>
-                      </a>
-                      <div class="mask">
-                        <a href="#" class="btn">查看详情</a>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="pic">
-                          <img src="@/assets/Home/images/img27.png" alt />
-                        </div>
-                        <div class="content">
-                          <h3>简约木质餐盘</h3>
-                          <span>￥200</span>
-                        </div>
-                      </a>
-                      <div class="mask">
-                        <a href="#" class="btn">查看详情</a>
-                      </div>
-                    </li>
-                  </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </dd>
+              </dl>
+              <ul class="nav">
+                <li class="link" @click="toIndex">
+                  <span>首页</span>
+                </li>
+                <li class="link" @click="toProducts">
+                  <span>所有产品</span>
+                </li>
+                <li class="link" @click="toBlog">
+                  <span>博客</span>
+                </li>
+                <li class="link" @click="toArticle">
+                  <span>文章列表</span>
+                </li>
+                <li class="link" @click="toPersonal">
+                  <span>个人中心</span>
+                </li>
+              </ul>
+              <a href="#" class="search"></a>
+              <div class="reg">
+                <div class="ico">
+                  <span class="ico_c link" @click="toCart"></span>
+
+                  <div class="settle">
+                    <p class="con">
+                      0件商品 共计：
+                      <span>￥0</span>
+                    </p>
+                    <a href="#" class="btn">结算</a>
+                  </div>
+                  <span class="con">0</span>
                 </div>
-              </dd>
-            </dl>
-            <ul class="nav">
-              <li class="link" @click="toIndex">
-                <span>首页</span>
-              </li>
-              <li class="link" @click="toProducts">
-                <span>所有产品</span>
-              </li>
-              <li class="link" @click="toBlog">
-                <span>博客</span>
-              </li>
-              <li class="link" @click="toArticle">
-                <span>文章列表</span>
-              </li>
-              <li class="link" @click="toPersonal">
-                <span>个人中心</span>
-              </li>
-            </ul>
-            <a href="#" class="search"></a>
-            <div class="reg">
-              <div class="ico">
-                <span class="ico_c"></span>
-                <div class="settle">
-                  <p class="con">
-                    0件商品 共计：
-                    <span>￥0</span>
-                  </p>
-                  <a href="#" class="btn">结算</a>
+                <div class="reg_c">
+                  <span class="link" id @click="toLogin">登陆</span>
+                  <span>&nbsp;|&nbsp;</span>
+                  <span class="link" @click="toRegister">注册</span>
                 </div>
-                <span class="con">0</span>
-              </div>
-              <div class="reg_c">
-                <span class="link" id @click="toLogin">登陆</span>
-                <span>&nbsp;|&nbsp;</span>
-                <span class="link" @click="toRegister">注册</span>
               </div>
             </div>
           </div>
-        </div>
-      </el-header>
+        </el-header>
 
-      <!-- header部分结束 -->
-      <!--  <el-menu
+        <!-- header部分结束 -->
+        <!--  <el-menu
           :default-active="activeIndex"
           class="el-menu-demo"
           mode="horizontal"
@@ -132,105 +132,104 @@
           <el-menu-item index="3">所有产品</el-menu-item>
           <el-menu-item index="4">关于我们</el-menu-item>
           <el-menu-item index="5">联系我们</el-menu-item>
-      </el-menu>-->
-      <el-container style="margin-top:15px">
-        <el-aside width="200px">
-          <h5>个人中心</h5>
-          <el-menu
-            default-active="1"
-            class="el-menu-vertical-demo"
-            @open="handleOpen"
-            @close="handleClose"
-          >
-            <el-submenu index="1">
-              <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>我的订单</span>
-              </template>
-              <el-menu-item-group>
-                <template slot="title">分组一</template>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-              </el-menu-item-group>
-              <el-menu-item-group title="分组2">
-                <el-menu-item index="1-3">选项3</el-menu-item>
-              </el-menu-item-group>
-              <el-submenu index="1-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="1-4-1">选项1</el-menu-item>
+        </el-menu>-->
+        <el-container style="margin-top:15px">
+          <el-aside width="200px">
+            <h5>个人中心</h5>
+            <el-menu
+              default-active="1"
+              class="el-menu-vertical-demo"
+              @open="handleOpen"
+              @close="handleClose"
+            >
+              <el-submenu index="1">
+                <template slot="title">
+                  <i class="el-icon-location"></i>
+                  <span>我的订单</span>
+                </template>
+                <el-menu-item-group>
+                  <template slot="title">分组一</template>
+                  <el-menu-item index="1-1">选项1</el-menu-item>
+                  <el-menu-item index="1-2">选项2</el-menu-item>
+                </el-menu-item-group>
+                <el-menu-item-group title="分组2">
+                  <el-menu-item index="1-3">选项3</el-menu-item>
+                </el-menu-item-group>
+                <el-submenu index="1-4">
+                  <template slot="title">选项4</template>
+                  <el-menu-item index="1-4-1">选项1</el-menu-item>
+                </el-submenu>
               </el-submenu>
-            </el-submenu>
-            <el-menu-item index="2">
-              <i class="el-icon-menu"></i>
-              <span slot="title">我的购物津贴</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-document"></i>
-              <span slot="title">我的红包</span>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <i class="el-icon-setting"></i>
-              <span slot="title">我的收藏</span>
-            </el-menu-item>
-            <el-menu-item index="5">
-              <i class="el-icon-setting"></i>
-              <span slot="title">我的关注</span>
-            </el-menu-item>
-            <el-menu-item index="5">
-              <i class="el-icon-setting"></i>
-              <span slot="title">我的收货地址</span>
-            </el-menu-item>
-            <el-menu-item index="5">
-              <i class="el-icon-setting"></i>
-              <span slot="title">我的发票</span>
-            </el-menu-item>
-            <el-menu-item index="5">
-              <i class="el-icon-setting"></i>
-              <span slot="title">售后管理</span>
-            </el-menu-item>
-          </el-menu>
-        </el-aside>
-        <el-main>
-          <el-menu
-            :default-active="activeIndex"
-            class="el-menu-demo orders"
-            mode="horizontal"
-            @select="handleSelect"
-          >
-            <el-menu-item index="1">所有订单</el-menu-item>
-            <el-menu-item index="2">待付款</el-menu-item>
-            <el-menu-item index="3">待发货</el-menu-item>
-            <el-menu-item index="4">待收货</el-menu-item>
-            <el-menu-item index="5">待评价</el-menu-item>
-          </el-menu>
-          <el-row :gutter="10" class="allorder">
-            <el-col :span="6" style="text-align:left;padding:5px">
-              <img src="@/assets/images/pic1.jpg" alt />
-            </el-col>
-            <el-col :span="6" style="text-align:left;">快件已到达杭州中转部</el-col>
-            <el-col :span="6" :offset="6" style="text-align:left;">
-              <el-button type="info">确认收货</el-button>
-            </el-col>
-          </el-row>
-          <hr style="margin:0 0 10px 0" />
-          <el-row :gutter="10" class="allorder">
-            <el-col :span="6" style="text-align:left;padding:5px">
-              <img src="@/assets/images/pic1.jpg" alt />
-            </el-col>
-            <el-col :span="6" style="text-align:left;">快件已到达杭州中转部</el-col>
-            <el-col :span="6" :offset="6" style="text-align:left;">
-              <el-button type="info">确认收货</el-button>
-            </el-col>
-          </el-row>
-        </el-main>
+              <el-menu-item index="2">
+                <i class="el-icon-menu"></i>
+                <span slot="title">我的购物津贴</span>
+              </el-menu-item>
+              <el-menu-item index="3">
+                <i class="el-icon-document"></i>
+                <span slot="title">我的红包</span>
+              </el-menu-item>
+              <el-menu-item index="4">
+                <i class="el-icon-setting"></i>
+                <span slot="title">我的收藏</span>
+              </el-menu-item>
+              <el-menu-item index="5">
+                <i class="el-icon-setting"></i>
+                <span slot="title">我的关注</span>
+              </el-menu-item>
+              <el-menu-item index="5">
+                <i class="el-icon-setting"></i>
+                <span slot="title">我的收货地址</span>
+              </el-menu-item>
+              <el-menu-item index="5">
+                <i class="el-icon-setting"></i>
+                <span slot="title">我的发票</span>
+              </el-menu-item>
+              <el-menu-item index="5">
+                <i class="el-icon-setting"></i>
+                <span slot="title">售后管理</span>
+              </el-menu-item>
+            </el-menu>
+          </el-aside>
+          <el-main>
+            <el-menu
+              :default-active="activeIndex"
+              class="el-menu-demo orders"
+              mode="horizontal"
+              @select="handleSelect"
+            >
+              <el-menu-item index="1">所有订单</el-menu-item>
+              <el-menu-item index="2">待付款</el-menu-item>
+              <el-menu-item index="3">待发货</el-menu-item>
+              <el-menu-item index="4">待收货</el-menu-item>
+              <el-menu-item index="5">待评价</el-menu-item>
+            </el-menu>
+            <el-row :gutter="10" class="allorder">
+              <el-col :span="6" style="text-align:left;padding:5px">
+                <img src="@/assets/images/pic1.jpg" alt />
+              </el-col>
+              <el-col :span="6" style="text-align:left;">快件已到达杭州中转部</el-col>
+              <el-col :span="6" :offset="6" style="text-align:left;">
+                <el-button type="info">确认收货</el-button>
+              </el-col>
+            </el-row>
+            <hr style="margin:0 0 10px 0" />
+            <el-row :gutter="10" class="allorder">
+              <el-col :span="6" style="text-align:left;padding:5px">
+                <img src="@/assets/images/pic1.jpg" alt />
+              </el-col>
+              <el-col :span="6" style="text-align:left;">快件已到达杭州中转部</el-col>
+              <el-col :span="6" :offset="6" style="text-align:left;">
+                <el-button type="info">确认收货</el-button>
+              </el-col>
+            </el-row>
+          </el-main>
+        </el-container>
+        <div style="height:100px;width:100%"></div>
       </el-container>
-      <div style="height:100px;width:100%"></div>
-      
-    </el-container>
     </div>
     <el-footer>
-        <div class="foot-content">
-          <el-row :gutter="10">
+      <div class="foot-content">
+        <el-row :gutter="10">
           <el-col :span="6">
             <div>正</div>
             <span>正品承诺</span>
@@ -294,8 +293,8 @@
             </el-col>
           </el-row>
         </div>
-        </div>
-      </el-footer>
+      </div>
+    </el-footer>
   </div>
 </template>
 
@@ -352,6 +351,11 @@ export default {
         path: "/personal",
       });
     },
+    toCart() {
+      this.$router.push({
+        path: "/cart",
+      });
+    },
   },
 };
 </script>
@@ -370,9 +374,9 @@ export default {
 }
 .personal {
   width: 100%;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
-.content{
+.content {
   width: 76%;
   margin-left: 12%;
   background: white;
@@ -389,12 +393,11 @@ export default {
   margin-top: 50px;
   padding-top: 50px;
 }
-.foot-content{
+.foot-content {
   width: 80%;
   margin-left: 10%;
-
 }
-.link{
+.link {
   cursor: pointer;
 }
 
@@ -410,7 +413,7 @@ export default {
 body > .el-container {
   margin-bottom: 40px;
 }
-.el-footer>.foot-content > .el-row > .el-col > div {
+.el-footer > .foot-content > .el-row > .el-col > div {
   height: 60px;
   width: 60px;
   float: left;
@@ -428,5 +431,4 @@ body > .el-container {
 .something > .el-row > .el-col {
   text-align: left;
 }
-
 </style>

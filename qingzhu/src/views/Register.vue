@@ -75,7 +75,7 @@
 			<a href="#" class="search"></a>
 			<div class="reg">
 				<div class="ico">
-					<span class = "ico_c"></span>
+					<span class = "ico_c" @click="toCart"></span>
 					<div class="settle">
 						<p class="con">0件商品 共计：<span>￥0</span></p>
 						<a href="#" class="btn">结算</a>
@@ -319,6 +319,11 @@ export default {
         toPersonal(){
             this.$router.push({
                 path:'/personal'
+            });
+		},
+		toCart(){
+            this.$router.push({
+                path:'/cart'
             });
         }
     }

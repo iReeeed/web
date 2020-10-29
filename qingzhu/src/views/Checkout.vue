@@ -96,7 +96,7 @@
             <a href="#" class="search"></a>
             <div class="reg">
               <div class="ico">
-                <span class="ico_c"></span>
+                <span class="ico_c link" @click="toCart"></span>
                 <div class="settle">
                   <p class="con">
                     0件商品 共计：
@@ -220,27 +220,27 @@
               <br />8. 礼品卡支付金额不支持开发票
             </el-col>
             <el-col :span="6" style="margin-top:15px;text-align:right" class="cal">
-                <el-row :gutter="10">
-                    <el-col :offset="6" :span="8">实际应付：</el-col>
-                    <el-col :span="6">￥299.0</el-col>
-                </el-row>
-                <el-row :gutter="10">
-                    <el-col :offset="6" :span="8">运费：</el-col>
-                    <el-col :span="6">￥0.0</el-col>
-                </el-row>
-                <el-row :gutter="10">
-                    <el-col :offset="6" :span="8">税费：</el-col>
-                    <el-col :span="6">￥0.0</el-col>
-                </el-row>
-                <el-row :gutter="10">
-                    <el-col :offset="6" :span="8">合计：</el-col>
-                    <el-col :span="6" style="color:red;font-size:20px">￥299.0</el-col>
-                </el-row>
-                <el-row :gutter="10">
-                    <el-col :offset="13" :span="6" style="text-align:right">
-                        <el-button type="primary" class="checkout-btn">提交订单</el-button>
-                    </el-col>
-                </el-row>
+              <el-row :gutter="10">
+                <el-col :offset="6" :span="8">实际应付：</el-col>
+                <el-col :span="6">￥299.0</el-col>
+              </el-row>
+              <el-row :gutter="10">
+                <el-col :offset="6" :span="8">运费：</el-col>
+                <el-col :span="6">￥0.0</el-col>
+              </el-row>
+              <el-row :gutter="10">
+                <el-col :offset="6" :span="8">税费：</el-col>
+                <el-col :span="6">￥0.0</el-col>
+              </el-row>
+              <el-row :gutter="10">
+                <el-col :offset="6" :span="8">合计：</el-col>
+                <el-col :span="6" style="color:red;font-size:20px">￥299.0</el-col>
+              </el-row>
+              <el-row :gutter="10">
+                <el-col :offset="13" :span="6" style="text-align:right">
+                  <el-button type="primary" class="checkout-btn">提交订单</el-button>
+                </el-col>
+              </el-row>
             </el-col>
           </el-row>
         </div>
@@ -388,12 +388,16 @@ export default {
         path: "/personal",
       });
     },
+    toCart() {
+      this.$router.push({
+        path: "/cart",
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
-
 @import "../assets/Home/css/reset.css";
 @import "../assets/Home/css/index.css";
 .checkout {
@@ -481,20 +485,20 @@ div > p {
   height: 300px;
   background: rgb(223, 208, 208);
 }
-.cal>.el-row{
-    padding: 10px 0;
+.cal > .el-row {
+  padding: 10px 0;
 }
-.checkout-btn{
-    background: red;
-    border: red;
+.checkout-btn {
+  background: red;
+  border: red;
 }
-.checkout-btn:hover{
-    background:rgba(221, 4, 4, 0.445) ;
+.checkout-btn:hover {
+  background: rgba(221, 4, 4, 0.445);
 }
-.check-addr{
+.check-addr {
   margin-top: 30px;
 }
-.link{
+.link {
   cursor: pointer;
 }
 </style>
